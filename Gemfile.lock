@@ -198,7 +198,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bootsnap (>= 1.1.0)
+  bootsnap
   byebug
   capybara
   coffee-rails (~> 4.2)

@@ -1,5 +1,9 @@
-Rails.application.routes.draw do
-  root to: "todos#index"
+# frozen_string_literal: true
 
-  resources :todos, only: [:index, :new, :create]
+Rails.application.routes.draw do
+  root to: 'todos#index'
+
+  resources :todos, only: %i[index new create]
+
+  resource :session, only: [:new]
 end
